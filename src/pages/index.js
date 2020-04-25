@@ -4,14 +4,21 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
+const rootStyle = {
+  height: '100%',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+}
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home"/>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image/>
+    <div style={rootStyle}>
+      <div style={{ width: 1024, height: 734 }}>
+        <Image/>
+      </div>
     </div>
   </Layout>
 )
