@@ -5,6 +5,7 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 
 const rootStyle = {
+  width: "100%",
   height: '100%',
   display: 'flex',
   flexDirection: 'column',
@@ -16,7 +17,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home"/>
     <div style={rootStyle}>
-      <div style={{ width: 1024, height: 734 }}>
+      <div style={{ width: "80%", height: "100%", maxWidth: 1024, maxHeight: 1024 }}>
         <Image/>
       </div>
     </div>
